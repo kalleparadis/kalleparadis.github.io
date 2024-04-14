@@ -1,0 +1,91 @@
+html {
+  background-color: rgba(4, 15, 32, 1);
+  background-image: url("TibiaClient_Artwork_11.50.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5px;
+  }
+}
+
+.is-online {
+  height: 8px;
+  width: 8px;
+  background-color: #00e600;
+  border-radius: 30%;
+  display: inline-block;
+}
+
+.text {
+  clear: both;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+	color: #3391ff;
+}
+
+.col {
+  box-shadow: 3px 3px 18px 3px rgba(4, 15, 32, 0.91);
+  /*background-color: rgba(255, 255, 255, 0.9);*/
+  background-color: rgba(19, 21, 22, 0.9);
+  color: #e8e6e3;
+  padding: 15px 10px;
+  margin: 0px 5px;
+  width: 400px;
+  max-width: 400px;
+
+  @media screen and (max-width: 768px) {
+    margin: 5px 0px;
+    padding: 10px 5px;
+    width: 100%;
+  }
+}
+
+#minimapColumn {
+  /*background-color: rgba(4, 15, 32, 0.9);*/
+  background-color: rgba(19, 21, 22, 0.9);
+  box-shadow: 3px 3px 18px 3px rgba(4, 15, 32, 0.91);
+  margin: 0px 5px;
+
+  @media screen and (max-width: 768px) {
+    min-width: initial;
+    max-width: initial;
+    margin: 5px 0px;
+    width: 100%;
+  }
+}
+#minimapColumn img {
+  width: 100%;
+}
+
+#highscoresTable {
+  min-width: 250px;
+  max-width: 400px;
+}
+
+#guildsTable {
+  min-width: 250px;
+  max-width: 400px;
+}
+
